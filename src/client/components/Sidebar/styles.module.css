@@ -1,0 +1,82 @@
+@import url("../../styles/colors.css");
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 75px;
+}
+
+.expand {
+    max-width: 200px;
+}
+
+.dark {
+    border-right: 1px solid var(--lightgray);
+}
+
+.light {
+    border-right: 1px solid var(--black);
+}
+
+.sidebar a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.dark a {
+    border-bottom: 1px solid var(--lightgray);
+}
+
+.light a {
+    border-bottom: 1px solid var(--black);
+}
+
+.sidebar i {
+    padding: 2px;
+}
+
+.sidebar p {
+    padding: 15px;
+    justify-content: center;
+}
+
+.noborder {
+    border: 0 !important;
+}
+
+.expandButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background: none;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+.expandButton:focus {
+    outline: none;
+}
+
+.light .expandkButton:hover {
+    color: var(--medred);
+}
+
+.dark .expandButton:hover {
+    color: var(--cyan);
+}

@@ -1,0 +1,42 @@
+@import url("../../styles/colors.css");
+
+.base {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.dark {
+    background-color: var(--darkgray);
+    color: var(--lightgray);
+}
+
+.dark a, .dark a:link, .dark a:visited, .dark a:active {
+    text-decoration: none;
+    color: var(--lightgray);
+}
+
+.dark a:hover {
+    text-decoration: none;
+    color: var(--cyan);
+}
+
+.light {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.light a, .light a:link, .light a:visited, .light a:active {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.light a:hover {
+    text-decoration: none;
+    color: var(--medred);
+}
+
+main {
+    color: inherit;
+    background-color: inherit;
+}

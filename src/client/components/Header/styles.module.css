@@ -1,0 +1,68 @@
+@import url("../../styles/colors.css");
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    color: inherit;
+    background-color: inherit;
+}
+
+.dark {
+    border-bottom: 1px solid var(--lightgray);
+}
+
+.light {
+    border-bottom: 1px solid var(--black);
+}
+
+.logo {
+    padding-right: 20px;
+    padding-left: 5px;
+    max-width: 300px;
+}
+
+.title {
+  color: var(--medred);
+}
+
+.topnav {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.topnav a, .topnav button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.backButton {
+    background: none;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+.backButton:focus {
+    outline: none;
+}
+
+.light .backButton:hover {
+    color: var(--medred);
+}
+
+.dark .backButton:hover {
+    color: var(--cyan);
+}

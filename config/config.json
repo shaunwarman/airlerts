@@ -1,0 +1,50 @@
+{
+  "server": {
+    "debug": {
+      "log": {
+        "$filter": "env",
+        "$default": ["debug"],
+        "production": ["warn"]
+      }
+    }
+  },
+  "connections": {
+    "web": {
+      "labels": [
+        "web"
+      ],
+      "port": 8000,
+      "routes": {
+        "cors": {
+          "credentials": true,
+          "origin": ["*"]
+        }
+      }
+    }
+  },
+  "plugins": {
+    "auth": {
+      "register": "require:hapi-auth-basic"
+    },
+    "logging": {
+      "register": "require:good",
+      "options": {
+        "reporters": {
+          "consoleReporter": [{
+            "module": "good-squeeze",
+            "name": "Squeeze",
+              "args": [{ "log": "*", "response": "*" }]
+            }, {
+              "module": "good-console"
+            }, "stdout"]
+        }
+      }
+    },
+    "session": {
+      "register": "require:hapi-auth-cookie"
+    },
+    "static": {
+      "register": "require:inert"
+    }
+  }
+}

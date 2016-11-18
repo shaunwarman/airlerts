@@ -1,0 +1,10 @@
+@import url("../../styles/colors.css");
+
+.notfound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    color: inherit;
+    background-color: inherit;
+}

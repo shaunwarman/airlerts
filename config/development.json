@@ -1,0 +1,16 @@
+{
+  "plugins": {
+    "logging": {
+      "options": {
+        "reporters": [{
+          "reporter": "require:good-console",
+          "events": {
+            "log": ["debug", "log", "error", "medium"],
+            "request": "*",
+            "response": "*"
+          }
+        }]
+      }
+    }
+  }
+}
